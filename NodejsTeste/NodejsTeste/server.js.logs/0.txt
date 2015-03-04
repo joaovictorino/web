@@ -1,14 +1,16 @@
+Sun, 25 Jan 2015 18:21:05 GMT body-parser deprecated bodyParser: use individual json/urlencoded middlewares at server.js:8:9
+Sun, 25 Jan 2015 18:21:05 GMT body-parser deprecated undefined extended: provide extended option at node_modules\body-parser\index.js:85:29
+Sun, 25 Jan 2015 18:21:05 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:13:14
 
-fs.js:690
-  return binding.lstat(pathModule._makeLong(path));
-                 ^
-Error: EPERM, operation not permitted 'C:\Users\João'
-    at Object.fs.lstatSync (fs.js:690:18)
-    at Object.realpathSync (fs.js:1278:21)
-    at tryFile (module.js:142:15)
-    at Function.Module._findPath (module.js:181:18)
-    at Function.Module._resolveFilename (module.js:336:25)
-    at Function.Module._load (module.js:280:25)
-    at Function.Module.runMain (module.js:497:10)
-    at startup (node.js:119:16)
-    at node.js:906:3
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: failed to connect to [192.168.56.101:27017]
+    at null.<anonymous> (C:\NodejsTeste\NodejsTeste\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:549:74)
+    at emit (events.js:106:17)
+    at null.<anonymous> (C:\NodejsTeste\NodejsTeste\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:150:15)
+    at emit (events.js:98:17)
+    at Socket.<anonymous> (C:\NodejsTeste\NodejsTeste\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:533:10)
+    at Socket.emit (events.js:95:17)
+    at net.js:440:14
+    at process._tickCallback (node.js:419:13)

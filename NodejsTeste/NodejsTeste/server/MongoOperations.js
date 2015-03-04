@@ -26,8 +26,7 @@ exports.add = function (request, response) {
 };
 
 exports.modify = function (request, response) {
-    var id = request.params.entidadeID;
-    EntidadeModel.update({ _id: entidadeID }, { Name: request.body.Name }, { multi: false }, function (error, rowsAffected) {
+    EntidadeModel.update({ _id: request.body._id }, { Name: request.body.Name }, { multi: false }, function (error, rowsAffected) {
         if (error) {
             response.send(500, { error: error });
         } else if (rowsAffected == 0) {

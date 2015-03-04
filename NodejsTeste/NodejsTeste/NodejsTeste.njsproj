@@ -35,6 +35,7 @@
     <Compile Include="client\proxy.js" />
     <Compile Include="server.js" />
     <Compile Include="server\MongoOperations.js" />
+    <Compile Include="server\RabbitMQClient.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="Web.config" />

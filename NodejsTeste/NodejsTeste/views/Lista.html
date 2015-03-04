@@ -11,15 +11,21 @@
             <h1>Node-Express listagem</h1>
             <div>
                 <input type="text" style="width: 200px;" ng-model="novoText" />
-                <button id="btnAddTodo" style="margin: 2px;" ng-click="Adicionar()">Adicionar</button>
+                <button id="btnAdicionar" style="margin: 2px;" ng-click="Adicionar()" ng-disabled="!novoText">Adicionar</button>
             </div>
             <div>
                 <h3>Lista</h3>
                 <div ng-repeat="entidade in entidades">
                     <div>
+                        <button id="btnEditar" style="margin: 2px;" ng-click="ExibirEdicao(entidade)">Editar</button>
                         <span>{{entidade.Name}}</span>
                     </div>
                 </div>
+            </div>
+            <div ng-show="exibirEdicao">
+                <input type="text" style="width: 200px;" ng-model="editadoText" />
+                <input type="hidden" style="width: 200px;" ng-model="idText" />
+                <button id="btnAddTodo" style="margin: 2px;" ng-click="Editar()" ng-disabled="!editadoText">Salvar</button>
             </div>
         </div>
     </div>
