@@ -1,0 +1,14 @@
+
+fs.js:690
+  return binding.lstat(pathModule._makeLong(path));
+                 ^
+Error: EPERM, operation not permitted 'C:\Users\João'
+    at Object.fs.lstatSync (fs.js:690:18)
+    at Object.realpathSync (fs.js:1278:21)
+    at tryFile (module.js:142:15)
+    at Function.Module._findPath (module.js:181:18)
+    at Function.Module._resolveFilename (module.js:336:25)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:906:3

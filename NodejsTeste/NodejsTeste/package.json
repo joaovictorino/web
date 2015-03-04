@@ -1,0 +1,25 @@
+{
+  "name": "NodejsTeste",
+  "version": "0.0.0",
+  "description": "NodejsTeste",
+  "main": "server.js",
+  "author": "João",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "bugs": {
+    "url": "https://github.com/username/repository/issues"
+  },
+  "homepage": "https://github.com/username/repository",
+  "dependencies": {
+    "body-parser": "^1.10.2",
+    "express": "^4.11.1",
+    "mongoose": "^3.8.21"
+  },
+  "devDependencies": {},
+  "license": "ISC"
+}

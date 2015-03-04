@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Node-Express</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+</head>
+<body>
+    <div>
+        <div ng-app="App" ng-controller="entidadeController">
+            <h1>Node-Express listagem</h1>
+            <div>
+                <input type="text" style="width: 200px;" ng-model="novoText" />
+                <button id="btnAddTodo" style="margin: 2px;" ng-click="Adicionar()">Adicionar</button>
+            </div>
+            <div>
+                <h3>Lista</h3>
+                <div ng-repeat="entidade in entidades">
+                    <div>
+                        <span>{{entidade.Name}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script src="proxy.js"></script>
+    <script src="controller.js"></script>
+</body>
+</html>
